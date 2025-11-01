@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+.venv/
+venv/
+
+# Environment
+.env
+
+# Data and models
+/data/raw/
+/data/processed/
+data/raw/
+data/processed/
+models/
+*.joblib
+*.pkl
+
+# pytest cache
+.pytest_cache/
+coverage/
+
+# Frontend
+aqi-frontend/node_modules/
+aqi-frontend/build/
+aqi-frontend/.env
+
+# VSCode
+.vscode/

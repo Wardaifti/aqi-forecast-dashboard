@@ -1,0 +1,39 @@
+
+H
+(
+__dummy"
+__dummy_idJaqi_feature_store
+Ü•ÊÇØ¬¥ĞÜ•ÊÇØ¬¥Ğ
+t
+T
+	sensor_id'Unique identifier for AQI sensor record"	sensor_idJaqi_feature_store
+Ü•ÊÇØ¬¥ĞÜ•ÊÇØ¬¥Ğ1"$59ddaf42-3792-4d7a-ae42-5bd94547ef6c*ö–ÊÇÈÔÀ¯2Ø
+“
+karachi_air_featuresaqi_feature_store	sensor_id"
+pm10"	
+pm2_5"
+carbon_monoxide"
+nitrogen_dioxide"
+sulphur_dioxide"	
+ozone"
+temperature_2m"
+relative_humidity_2m"
+dew_point_2m"
+apparent_temperature"
+pressure_msl"
+windspeed_10m"
+winddirection_10m"
+aqi"
+
+aqi_change"
+aqi_pct_change2€õ$:¢timeZb`C:\Users\HP\Desktop\AQI predictor\aqi_feature_store\feature_repo\data\processed_unscaled.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢`C:\Users\HP\Desktop\AQI predictor\aqi_feature_store\feature_repo\data\processed_unscaled.parquet’Ü•ÊÇà¸ş"Ü•ÊÇè«ìÏ@b
+	sensor_id@
+Ü•ÊÇØ¬¥Ğö–ÊÇÈÔÀ¯
+€È»Ç€ëÀÇ
+€Ù¬¿€ÆÇR²
+¯
+,feast.infra.online_stores.sqlite.SqliteTable"
+UC:\Users\HP\Desktop\AQI predictor\aqi_feature_store\feature_repo\data\online_store.db&aqi_feature_store_karachi_air_featuresb¶timeZb`C:\Users\HP\Desktop\AQI predictor\aqi_feature_store\feature_repo\data\processed_unscaled.parquetŠ1feast.infra.offline_stores.file_source.FileSource¢`C:\Users\HP\Desktop\AQI predictor\aqi_feature_store\feature_repo\data\processed_unscaled.parquetªaqi_feature_store’Ü•ÊÇà¸ş"Ü•ÊÇè«ìÏŠ3
+
+aqi_feature_store
+Ü•ÊÇ°é­Ü•ÊÇ°é­
