@@ -5,6 +5,7 @@ import requests
 import numpy as np
 from datetime import datetime, timedelta, date
 from flask_cors import CORS
+import os
 
 app = Flask(__name__)
 CORS(app)
@@ -12,8 +13,11 @@ CORS(app)
 # ----------------------------- #
 # Load trained AQI prediction model
 # ----------------------------- #
-MODEL_PATH = r"C:\Users\HP\Desktop\AQI predictor\aqi_feature_store\rf_aqi_model.pkl"
+
+
+MODEL_PATH = os.path.join(os.path.dirname(__file__), "aqi_feature_store", "rf_aqi_model.pkl")
 model = joblib.load(MODEL_PATH)
+
 
 # ----------------------------- #
 # Fetch past 7 days pollutant data
