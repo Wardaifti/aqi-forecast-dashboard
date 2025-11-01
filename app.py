@@ -122,6 +122,12 @@ def predict_future_aqi(daily_averages):
 # ----------------------------- #
 # Main Forecast Endpoint (returns current + past + predictions)
 # ----------------------------- #
+
+@app.route('/')
+def home():
+    return "✅ AQI Predictor is running successfully!"
+
+
 @app.route("/forecast", methods=["GET"])
 def forecast():
     city = request.args.get("city","Karachi")
