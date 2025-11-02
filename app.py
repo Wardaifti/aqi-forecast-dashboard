@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, send_from_directory
 import pandas as pd
 import joblib
 import requests
@@ -9,6 +9,7 @@ import os
 
 app = Flask(__name__)
 CORS(app)
+app = Flask(__name__, static_folder='build', static_url_path='')
 
 # ----------------------------- #
 # Load trained AQI prediction model
@@ -124,8 +125,14 @@ def predict_future_aqi(daily_averages):
 # ----------------------------- #
 
 @app.route('/')
-def home():
-    return "✅ AQI Predictor is running successfully!"
+def serve_react_app():
+    return send_from_directory(app.static_folder, 'index.html')
+
+# for any other path (like /dashboard, /about, etc.)
+@app.errorhandler(404)
+def not_found(e):
+    return send_from_directory(app.static_folder, 'index.html')
+
 
 
 @app.route("/forecast", methods=["GET"])
