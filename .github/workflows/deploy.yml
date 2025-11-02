@@ -1,0 +1,18 @@
+name: CD - Deploy to Railway
+
+on:
+  push:
+    branches: [ main ]  # only deploy when changes are pushed to main
+
+jobs:
+  deploy:
+    needs: test  # this makes CD wait until CI (test job) passes
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Deploy to Railway
+        uses: railwayapp/action-deploy@v1
+        with:
+          railway_token: ${{ secrets.RAILWAY_TOKEN }}
