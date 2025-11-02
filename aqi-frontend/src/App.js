@@ -23,15 +23,21 @@ function App() {
 
   // Load AQI forecast data
   useEffect(() => {
-    fetch("http://127.0.0.1:5000/forecast")
-      .then((res) => {
-        if (!res.ok) throw new Error("Failed to fetch backend data");
-        return res.json();
-      })
-      .then((data) => setData(data))
-      .catch((err) => setError(err.message))
-      .finally(() => setLoading(false));
-  }, []);
+  const backendUrl =
+    process.env.NODE_ENV === "production"
+      ? "https://aqi-forecast-dashboard-production.up.railway.app/forecast"
+      : "http://127.0.0.1:5000/forecast";
+
+  fetch(backendUrl)
+    .then((res) => {
+      if (!res.ok) throw new Error("Failed to fetch backend data");
+      return res.json();
+    })
+    .then((data) => setData(data))
+    .catch((err) => setError(err.message))
+    .finally(() => setLoading(false));
+}, []);
+
 
   // Load SHAP importance data
   useEffect(() => {
