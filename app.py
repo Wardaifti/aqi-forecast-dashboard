@@ -9,16 +9,19 @@ import os
 
 
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='build', static_url_path='')
 CORS(app)
+
+REACT_BUILD_DIR = os.path.join(os.getcwd(), 'aqi-frontend', 'build')
+
 
 
 # ----------------------------- #
 # Load trained AQI prediction model
 # ----------------------------- #
-
-
 MODEL_PATH = os.path.join(os.path.dirname(__file__), "aqi_feature_store", "rf_aqi_model.pkl")
+
+
 model = joblib.load(MODEL_PATH)
 
 
