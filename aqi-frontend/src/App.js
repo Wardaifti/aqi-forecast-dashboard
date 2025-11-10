@@ -214,19 +214,19 @@ function App() {
       <div className="metric-grid">
         <div className="metric-card">
           <h4>R² Score</h4>
-          <p>1.00</p>
+          <p>0.99</p>
         </div>
         <div className="metric-card">
           <h4>RMSE</h4>
-          <p>1.36</p>
+          <p>2.24</p>
         </div>
         <div className="metric-card">
           <h4>MAE</h4>
-          <p>0.29</p>
+          <p>0.52</p>
         </div>
         <div className="metric-card">
           <h4>MSE</h4>
-          <p>1.85</p>
+          <p>5.02</p>
         </div>
       </div>
       <p className="metric-note">
