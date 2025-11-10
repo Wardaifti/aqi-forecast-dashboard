@@ -26,7 +26,7 @@ function App() {
   const backendUrl =
     process.env.NODE_ENV === "production"
       ? "https://aqi-forecast-dashboard-production.up.railway.app/forecast"
-      : "http://127.0.0.1:5000/forecast";
+      : "http://127.0.0.1:8080/forecast";
 
   fetch(backendUrl)
     .then((res) => {

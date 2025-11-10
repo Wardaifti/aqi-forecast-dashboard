@@ -7,9 +7,11 @@ from datetime import datetime, timedelta, date
 from flask_cors import CORS
 import os
 
+
+
 app = Flask(__name__)
 CORS(app)
-app = Flask(__name__, static_folder='build', static_url_path='')
+
 
 # ----------------------------- #
 # Load trained AQI prediction model
