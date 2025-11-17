@@ -15,8 +15,6 @@ It predicts the **AQI for the next 3 days** in your city using real-time weather
 
 The project automates **data ingestion, preprocessing, feature engineering, model training, feature storage, CI/CD, and real-time visualization** via a modern web dashboard.
 
-🔗 **[View Detailed Project Description (PDF)](https://drive.google.com/file/d/1HPf17hvqI6icNTjRPkPuydkV1ub_lxO5/view?usp=sharing)**
-
 ---
 
 ## 🧠 Features  
